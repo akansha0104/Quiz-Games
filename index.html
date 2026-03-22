@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Splash -->
+<div id="splash">
+    <h1>🎮 Quiz Game</h1>
+</div>
+
+<!-- Level Screen -->
+<div id="levelScreen" style="display:none;">
+    <h2>Select Level</h2>
+
+    <button id="lvl0" onclick="playClick(); startLevel(0)"></button>
+    <button id="lvl1" onclick="playClick(); startLevel(1)"></button>
+    <button id="lvl2" onclick="playClick(); startLevel(2)"></button>
+</div>
+
+<!-- Game -->
+<div id="game" style="display:none;">
+
+    <h2 id="level"></h2>
+
+    <div class="top">
+        <span>Score: <span id="score">0</span></span>
+        <span>Time: <span id="timer">10</span></span>
+    </div>
+
+    <p id="question"></p>
+
+    <button onclick="playClick(); checkAnswer(true)">TRUE</button>
+    <button onclick="playClick(); checkAnswer(false)">FALSE</button>
+
+    <p id="result"></p>
+
+    <button onclick="playClick(); goBack()">Back</button>
+
+</div>
+
+<!-- Sounds -->
+<audio id="bgMusic" src="sounds/bg.mp3" loop></audio>
+<audio id="clickSound" src="sounds/click.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Splash -->
+<div id="splash">
+    <h1>🎮 Quiz Game</h1>
+</div>
+
+<!-- Level Screen -->
+<div id="levelScreen" style="display:none;">
+    <h2>Select Level</h2>
+
+    <button id="lvl0" onclick="playClick(); startLevel(0)"></button>
+    <button id="lvl1" onclick="playClick(); startLevel(1)"></button>
+    <button id="lvl2" onclick="playClick(); startLevel(2)"></button>
+</div>
+
+<!-- Game -->
+<div id="game" style="display:none;">
+
+    <h2 id="level"></h2>
+
+    <div class="top">
+        <span>Score: <span id="score">0</span></span>
+        <span>Time: <span id="timer">10</span></span>
+    </div>
+
+    <p id="question"></p>
+
+    <button onclick="playClick(); checkAnswer(true)">TRUE</button>
+    <button onclick="playClick(); checkAnswer(false)">FALSE</button>
+
+    <p id="result"></p>
+
+    <button onclick="playClick(); goBack()">Back</button>
+
+</div>
+
+<!-- Sounds -->
+<audio id="bgMusic" src="sounds/bg.mp3" loop></audio>
+<audio id="clickSound" src="sounds/click.mp3"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
